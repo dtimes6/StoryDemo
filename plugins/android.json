@@ -1,0 +1,91 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Speech\"><param name=\"android-package\" value=\"com.rjfun.cordova.plugin.Speech\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"File\"><param name=\"android-package\" value=\"org.apache.cordova.file.FileUtils\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\"><param name=\"android-package\" value=\"org.apache.cordova.networkinformation.NetworkManager\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SpeechSynthesis\"><param name=\"android-package\" value=\"org.apache.cordova.speech.SpeechSynthesis\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.RECORD_AUDIO\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 2
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.notenaticz.speech.speak": {
+            "PACKAGE_NAME": "com.relicfragments.storydemo"
+        },
+        "com.rjfun.cordova.plugin.iflyspeech": {
+            "PACKAGE_NAME": "com.relicfragments.storydemo"
+        },
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "com.relicfragments.storydemo"
+        },
+        "org.apache.cordova.file": {
+            "PACKAGE_NAME": "com.relicfragments.storydemo"
+        },
+        "org.apache.cordova.network-information": {
+            "PACKAGE_NAME": "com.relicfragments.storydemo"
+        },
+        "org.apache.cordova.speech.speechsynthesis": {
+            "PACKAGE_NAME": "com.relicfragments.storydemo"
+        }
+    },
+    "dependent_plugins": {}
+}

@@ -1,0 +1,20 @@
+{
+    "version": "0.0.1",
+    "name": "com.notenaticz.speech.speak",
+    "cordova_name": "TextToSpeech",
+    "description": "Cordova TextToSpeech Plugin",
+    "license": "Apache 2.0",
+    "keywords": [
+        "cordova",
+        "TextToSpeech"
+    ],
+    "platforms": [
+        "ios"
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=3.0.0"
+        }
+    ]
+}

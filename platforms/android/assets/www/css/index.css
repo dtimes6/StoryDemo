@@ -1,0 +1,29 @@
+.body {
+    margin-top: 0px;
+}
+
+#main-view {
+    margin-top: 55px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#prevButton {
+    position: fixed;
+    left: 0px;
+    buttom: 0px;
+}
+
+#nextButton {
+    position: fixed;
+    right: 0px;
+    buttom: 0px;
+}
+
+#useModel {
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    text-align: center;
+    buttom: 0px;
+}

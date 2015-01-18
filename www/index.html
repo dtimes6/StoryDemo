@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2014 Peng Dai. All rights reserved!
+-->
+<html ng-app="App">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" /> -->
+        <script type="text/javascript" src="components/jquery/jquery.js"></script>
+        <script type="text/javascript" src="components/bootstrap/js/bootstrap.js"></script>
+        <script type="text/javascript" src="components/angular/angular.js"></script>
+        <script type="text/javascript" src="components/angular-route/angular-route.js"></script>
+        <link rel="stylesheet" type="text/css" href="components/bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>小人书</title>
+    </head>
+    <body>
+        <div class="app" ng-controller="AppCtrl">
+            <div id="deviceready" class="blink">
+                <p class="event listening"></p>
+                <p class="event received"></p>
+            </div>
+            <div id="main-view" ng-view></div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/data.js"></script>
+        <script type="text/javascript" src="js/controller.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

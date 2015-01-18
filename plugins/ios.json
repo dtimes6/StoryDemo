@@ -1,0 +1,107 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"TextToSpeech\"><param name=\"ios-package\" onload=\"true\" value=\"CDVSpeak\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Speech\"><param name=\"ios-package\" value=\"CDVSpeech\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"File\"><param name=\"ios-package\" value=\"CDVFile\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\"><param name=\"ios-package\" value=\"CDVConnection\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "framework": {
+                "parents": {
+                    "AVFoundation.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "AddressBook.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "AudioToolbox.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "SystemConfiguration.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        },
+                        {
+                            "xml": "true",
+                            "count": 1
+                        }
+                    ],
+                    "QuartzCore.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "AssetsLibrary.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "MobileCoreServices.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.notenaticz.speech.speak": {
+            "PACKAGE_NAME": "com.relicfragments.storydemo"
+        },
+        "com.rjfun.cordova.plugin.iflyspeech": {
+            "PACKAGE_NAME": "com.relicfragments.storydemo"
+        },
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "com.relicfragments.storydemo"
+        },
+        "org.apache.cordova.file": {
+            "PACKAGE_NAME": "com.relicfragments.storydemo"
+        },
+        "org.apache.cordova.network-information": {
+            "PACKAGE_NAME": "com.relicfragments.storydemo"
+        },
+        "org.apache.cordova.speech.speechsynthesis": {
+            "PACKAGE_NAME": "com.relicfragments.storydemo"
+        }
+    },
+    "dependent_plugins": {}
+}

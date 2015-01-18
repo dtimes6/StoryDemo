@@ -1,0 +1,27 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-items">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="main-menu-items">
+            <ul class="nav navbar-nav">
+                <li id="prev"><a href="#/page/{{prev_id}}">上一页</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li id="next"><a href="#/page/{{next_id}}">下一页</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div>
+    <a ng-click="playVoice()"><img width="100%" src="{{image_url}}" ></a>
+</div>
+<a id="prevButton" type="button" class="btn btn-default btn-lg" href="#/page/{{prev_id}}">上一页</a>
+<div id="useModel">点击图片以播放解说</div>
+<a id="nextButton" type="button" class="btn btn-default btn-lg" href="#/page/{{next_id}}">下一页</a>
