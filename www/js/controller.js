@@ -49,27 +49,6 @@ App.controller('PageCtrl', function($scope, $routeParams, $doc, $con, $speech) {
         var con = $con[$scope.id];
         if (con) {
             $event.stopPropagation();
-            function RGBToHex(rgb){
-                var regexp = /[0-9]{0,3}/g;
-                var re = rgb.match(regexp);//利用正则表达式去掉多余的部分，将rgb中的数字提取
-                var hexColor = "#"; var hex = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
-                for (var i = 0; i < re.length; i++) {
-                    var r = null; var c = re[i];
-                    var hexAr = [];
-                    while (c > 16){
-                        r = c % 16;
-                        c = (c / 16) >> 0;
-                        hexAr.push(hex[r]);
-                    } hexAr.push(hex[c]);
-                    if(c < 16&&c != ""){
-                        hexAr.push(0)
-                    }
-                    hexColor += hexAr.reverse().join('');
-                }
-                //alert(hexColor)
-                return hexColor;
-            }
-
             var cache = document.getElementById('cache_image');
             cache.width  = $event.target.offsetWidth;
             cache.height = $event.target.offsetHeight;
