@@ -20,8 +20,9 @@
 </nav>
 
 <div>
-    <a ng-click="playVoice()"><img width="100%" src="{{image_url}}" ></a>
+    <a ng-click="playVoice($event)"><img width="100%" src="{{image_url}}" ></a>
 </div>
 <a id="prevButton" type="button" class="btn btn-default btn-lg" href="#/page/{{prev_id}}">上一页</a>
 <div id="useModel">点击图片以播放解说</div>
 <a id="nextButton" type="button" class="btn btn-default btn-lg" href="#/page/{{next_id}}">下一页</a>
+<canvas id="cache_image" style="visibility: hidden; position: absolute; left: 0px; top: 0px">您的浏览器不支持canvas标签</canvas>
