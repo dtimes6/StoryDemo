@@ -6,4 +6,6 @@
 /Users/daipeng/FOUND/StoryDemo/platforms/android/ant-build/classes/com/relicfragments/storydemo/R$string.class \
 /Users/daipeng/FOUND/StoryDemo/platforms/android/ant-build/classes/com/relicfragments/storydemo/R$xml.class \
 /Users/daipeng/FOUND/StoryDemo/platforms/android/ant-build/classes/com/relicfragments/storydemo/R.class \
+/Users/daipeng/FOUND/StoryDemo/platforms/android/ant-build/classes/org/apache/cordova/devicemotion/AccelListener$1.class \
+/Users/daipeng/FOUND/StoryDemo/platforms/android/ant-build/classes/org/apache/cordova/devicemotion/AccelListener.class \
 /Users/daipeng/FOUND/StoryDemo/platforms/android/ant-build/dexedLibs/classes-23051cdbd3282675a37a748f6fa99a5d.jar \
